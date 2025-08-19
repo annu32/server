@@ -1,6 +1,6 @@
 const express=require('express')
 const app=express()
-const port=8000
+const PORT=8000
 const web=require('./routes/web')
 const connectdb=require('./db/connectdb')
 const fileupload=require('express-fileupload')
