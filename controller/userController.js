@@ -45,7 +45,7 @@ class UserController{
             }
 
             //token create
-            const token= jwt.sign({ID:user.id},'Annu@try')
+            const token= jwt.sign({ID:user.id},process.env.JWT_SECRET,{expiresIn:'2d'})   //token will expire in 2 days
             //console.log(token)
 
             //send token in http-only cookies
